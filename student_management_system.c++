@@ -99,7 +99,7 @@ class Student : public info{
 
         while (!f4.eof()) {
             if (f4.read(reinterpret_cast<char*>(this), sizeof(*this))) {
-                if (phoneNumber == num) {
+                if (roll == num) {
                     cout << "Enter new record" << endl;
                     cin >> *this;
                     int pos = -1 * sizeof(*this);
